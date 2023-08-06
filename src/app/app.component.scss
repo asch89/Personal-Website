@@ -1,0 +1,252 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+    background-size: 240% 240%;
+    animation: gradient-animation 40s ease infinite;
+
+    .title {
+        h1, h3 {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            transition: 0.3s;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        h1 {
+            font-weight: 600;
+        }
+        h3 {
+            font-weight: 400;
+        }
+        h1:hover, h3:hover {
+            transform: scale(1.02, 1.02);
+            cursor: pointer;
+        }
+        color: white;
+        text-align: center;
+        font-size: calc(8pt + 2.5vw);
+        letter-spacing: 0.1em;
+    }
+
+    .buttons {
+        button {
+            all:unset;
+            padding: calc(5px + 0.2vw);
+            margin: calc(5px + 0.5vw);
+            background-color: rgba(0, 0, 0, 0);
+            border: calc(1px + 0.05vw) solid #FFF;
+            border-radius: 20px;
+            color: white;
+            font-weight: 100;
+            font-size: calc(8pt + 1.2vw);
+            transition: 0.4s;
+        }
+
+        button:hover {
+            -webkit-backdrop-filter: invert(50%);
+            backdrop-filter: hue-rotate(120deg) contrast(150%);
+            transform: scale(1.1, 1.1);
+            cursor: pointer;
+
+        }
+    }
+}
+
+.border {
+    background-color: #FFF;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    h3 {
+        padding-left: 50px;
+        margin-block-end: 0.3em;
+        align-self: flex-end;
+        font-size: 30pt;
+        background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 240% 240%;
+        animation: gradient-animation 40s ease infinite;
+    }
+}
+
+.about {
+    color: #4e4e4e;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+    background-size: 240% 240%;
+    animation: gradient-animation 40s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .focus {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: calc(4pt + 1.7vw);
+        .blurb {
+            min-width: 300px;
+            border-radius: 20px;
+            margin: calc(5px + 1.3vw);
+            padding: calc(5px + 1.3vw);
+            text-align: left;
+            width: 50%;
+            height: fit-content;
+            background-color: #FFF;
+        }
+        .contact {
+            min-width: 300px;
+            border-radius: 20px;
+            margin: calc(5px + 1.3vw);
+            padding: calc(5px + 1.3vw);
+            text-align: left;
+            width: 30%;
+            height: fit-content;
+            background-color: #FFF;
+            word-wrap: break-word;
+            .icon {
+                width: 3em;
+                height: 3em;
+                vertical-align: -0.125em;
+                padding: 2px;
+                color: #4e4e4e;
+                transition: 0.3s;
+              }
+            .icon:hover {
+                transform: scale(1.1, 1.1);
+                cursor: pointer;
+                color:#00b2cd;
+            }
+            .socials {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.projects {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+    background-size: 240% 240%;
+    animation: gradient-animation 40s ease infinite;
+    font-size: calc(7pt + 0.7vw);
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        min-width: 300px;
+        width: 85%;
+        border-radius: 20px;
+        margin: calc(5px + 1.3vw);
+        padding: calc(5px + 1.3vw);
+        text-align: left;
+        height: fit-content;
+        background-color: #FFF;
+    }
+}
+
+.experience {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
+    background-size: 240% 240%;
+    animation: gradient-animation 40s ease infinite;
+
+    .border {
+        min-height: 100px;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .job-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+    
+        .job {
+            min-width: 300px;
+            border-radius: 20px;
+            margin: calc(5px + 1.3vw);
+            padding: calc(5px + 1.3vw);
+            text-align: left;
+            height: fit-content;
+            background-color: #FFF;
+
+            h4 {
+                margin-block-start: 0;
+            }
+        }
+
+        .edu-skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            min-width: 340px;
+            .education {
+                border-radius: 20px;
+                margin: calc(5px + 1.3vw);
+                padding: calc(5px + 1.3vw);
+                text-align: left;
+                height: fit-content;
+                background-color: #FFF;
+    
+                h4 {
+                    margin-block-start: 0;
+                }
+            }
+    
+            .skills {
+                border-radius: 20px;
+                margin: calc(5px + 1.3vw);
+                padding: calc(5px + 1.3vw);
+                text-align: left;
+                height: fit-content;
+                background-color: #FFF;
+    
+                h4 {
+                    margin-block-start: 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

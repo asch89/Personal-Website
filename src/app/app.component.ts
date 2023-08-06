@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Title} from "@angular/platform-browser";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
+  constructor(private titleService:Title) {
+    this.titleService.setTitle("Joey Aschenbrenner");
+  }
+
+  goToElement(id: string) {
+    const element = document.getElementById(id);
+    if(element != null)
+      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  }
 }

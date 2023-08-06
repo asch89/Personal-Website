@@ -93,13 +93,15 @@
 
     .focus {
         padding: 10px;
+        margin: 10px;
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         font-size: calc(4pt + 1.7vw);
+        min-width: 280px;
         .blurb {
-            min-width: 300px;
+            min-width: 240px;
             border-radius: 20px;
             margin: calc(5px + 1.3vw);
             padding: calc(5px + 1.3vw);
@@ -109,7 +111,7 @@
             background-color: #FFF;
         }
         .contact {
-            min-width: 300px;
+            min-width: 240px;
             border-radius: 20px;
             margin: calc(5px + 1.3vw);
             padding: calc(5px + 1.3vw);
@@ -152,10 +154,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 280px;
     }
 
     .project {
-        min-width: 300px;
         width: 85%;
         border-radius: 20px;
         margin: calc(5px + 1.3vw);
@@ -173,6 +175,7 @@
     background: linear-gradient(300deg,#6dc0d5,#6db966,#fa824c,#745c97);
     background-size: 240% 240%;
     animation: gradient-animation 40s ease infinite;
+    font-size: calc(7pt + 0.5vw);
 
     .border {
         min-height: 100px;
@@ -192,10 +195,10 @@
             flex-direction: column;
             align-items: center;
             width: 50%;
+            min-width: 280px;
         }
     
         .job {
-            min-width: 300px;
             border-radius: 20px;
             margin: calc(5px + 1.3vw);
             padding: calc(5px + 1.3vw);
@@ -213,7 +216,7 @@
             flex-direction: column;
             align-items: center;
             width: 40%;
-            min-width: 340px;
+            min-width: 280px;
             .education {
                 border-radius: 20px;
                 margin: calc(5px + 1.3vw);

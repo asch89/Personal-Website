@@ -164,19 +164,36 @@
 
     .project-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         min-width: 280px;
     }
 
     .project {
-        width: 85%;
+        h4 {
+            margin-block-start: 0.2em;
+            margin-block-end: 0.8em;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        min-width: 250px;
         border-radius: 20px;
         margin: calc(5px + 1.3vw);
         padding: calc(5px + 1.3vw);
         text-align: left;
         height: fit-content;
         background-color: #FFF;
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+        }
     }
 }
 

@@ -1,4 +1,6 @@
-# Portfolio
+# Personal Website
+
+I developed my personal website using HTML, CSS, and JavaScript with the Angular framework.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
